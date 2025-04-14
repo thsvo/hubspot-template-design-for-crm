@@ -152,7 +152,7 @@ export default function CRMAuditLanding() {
             </div>
             <span className="font-bold text-xl">CRM Audit Pro</span>
           </div>
-          <nav className="hidden md:flex space-x-8">
+          {/* <nav className="hidden md:flex space-x-8">
             <a
               href="#features"
               className="text-gray-600 hover:text-[#ff5c35] transition-colors"
@@ -171,7 +171,7 @@ export default function CRMAuditLanding() {
             >
               FAQ
             </a>
-          </nav>
+          </nav> */}
           <Link href="#hubspot-meetings">
             <Button className="cta-button bg-[#ff5c35] hover:bg-[#e54a25] text-white">
               Schedule Audit
@@ -391,7 +391,8 @@ export default function CRMAuditLanding() {
             </div>
             <div>
               <h2 className="text-3xl font-bold">
-                🔒 Trusted by <span ref={counterRef}>0</span>+ B2B Teams
+                {/* 🔒 Trusted by <span ref={counterRef}>0</span>+ B2B Teams */}
+                🔒   Sales Teams
               </h2>
             </div>
           </div>
@@ -407,12 +408,12 @@ export default function CRMAuditLanding() {
                   <Star className="fill-current" />
                 </div>
                 <p className="text-gray-700 mb-6">
-                  "This audit uncovered $50K in missed revenue!"
+                  "The audit uncovered bottlenecks we’d overlooked for months. After fixes, we saw a 25% increase in qualified leads within one quarter."
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
                   <div>
-                    <p className="font-bold">SaaS Co. CEO</p>
+                    <p className="font-bold">Head of Sales, B2B Software Company</p>
                   </div>
                 </div>
               </CardContent>
@@ -428,12 +429,12 @@ export default function CRMAuditLanding() {
                   <Star className="fill-current" />
                 </div>
                 <p className="text-gray-700 mb-6">
-                  "Our CRM efficiency jumped 40% after their recommendations!"
+                  "We cut our sales cycle by 10 days just by fixing lead assignment and cleanup workflows—something the audit flagged immediately."
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
                   <div>
-                    <p className="font-bold">Tech Startup CMO</p>
+                    <p className="font-bold">RevOps Manager, Industrial Equipment Supplier</p>
                   </div>
                 </div>
               </CardContent>
@@ -449,12 +450,12 @@ export default function CRMAuditLanding() {
                   <Star className="fill-current" />
                 </div>
                 <p className="text-gray-700 mb-6">
-                  "Closed deals 25% faster thanks to their automation fixes!"
+                  "The audit helped us rework our nurture flows. Email engagement doubled and SQLs rose 18% in 6 weeks."
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
                   <div>
-                    <p className="font-bold">eCommerce Sales Director</p>
+                    <p className="font-bold">Marketing Director, Tech Services Firm</p>
                   </div>
                 </div>
               </CardContent>
@@ -470,13 +471,12 @@ export default function CRMAuditLanding() {
                   <Star className="fill-current" />
                 </div>
                 <p className="text-gray-700 mb-6">
-                  "Finally, our marketing and sales teams are aligned. Revenue
-                  grew by 35%!"
+                  "Our CRM adoption jumped from 56% to 91% post-audit. It’s now a tool our team actually uses—daily."
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
                   <div>
-                    <p className="font-bold">B2B Marketing Manager</p>
+                    <p className="font-bold">COO, Professional Services Firm</p>
                   </div>
                 </div>
               </CardContent>
