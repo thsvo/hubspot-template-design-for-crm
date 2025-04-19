@@ -27,16 +27,52 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <Script
+          id="google-tag-manager"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PLMT8JFL');`,
+          }}
+        />
+        <Script
           id="vtag-ai-js"
           src="https://r2.leadsy.ai/tag.js"
           data-pid="AZL208vL0uCcoBnY"
           data-version="062024"
           async
         />
+        <Script
+          id="google-tag-manager-gtag"
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=AW-16899045645`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16899045645');
+            `,
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <noscript>
+          <iframe 
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PLMT8JFL"
+            height="0" 
+            width="0" 
+            style={{display: 'none', visibility: 'hidden'}}
+          ></iframe>
+        </noscript>
         {children}
       </body>
     </html>
